@@ -34,20 +34,31 @@ void gcd_triple() {
     (void)g;
 }
 
+void integer_power() {
+    int base = 2, exp = 8;
+    int power = 1;
+    for (int i = 0; i < exp; ++i) power *= base;
+    (void)power;
+}
+
+void small_factorial() {
+    int result = 1;
+    for (int i = 1; i <= 6; ++i) result *= i;
+    (void)result;
+}
+
 extern "C" int misty_orbit();
-extern "C" void verdant_bridge();
-extern "C" void serene_willow();
-extern "C" void quiet_grove();
-extern "C" void ivory_summit();
+extern "C" void ivory_signal();
+extern "C" void ivory_harbor();
 
 int main() {
     fibonacci_sum();
     min_of_two();
     mod_cycle();
     gcd_triple();
-    verdant_bridge();
-    serene_willow();
-    quiet_grove();
-    ivory_summit();
+    integer_power();
+    small_factorial();
+    ivory_signal();
+    ivory_harbor();
     return misty_orbit();
 }
